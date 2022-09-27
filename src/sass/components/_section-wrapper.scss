@@ -1,0 +1,42 @@
+.section-wrapper {
+  &.inContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: 1520px) {
+      max-width: 100%;
+      padding: 0 40px;
+    }
+    @media (max-width: 500px) {
+      padding: 0 20px;
+    }
+  }
+}
+
+.new-section-wrapper {
+  // default padding for sections. Top/bottom padding may be overwritten by section parameters
+  padding: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.inContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: 1520px) {
+      max-width: 100%;
+      padding: 0 40px;
+    }
+    @media (max-width: 500px) {
+      padding: 0 20px;
+    }
+  }
+
+  .columns {
+    display: flex;
+  }
+  .column {
+    flex: 0 0 50%;
+  }
+}
